@@ -17,6 +17,7 @@
 		362021152965CE0A00F13F5B /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362021142965CE0A00F13F5B /* ScrumsView.swift */; };
 		362021172965D8C900F13F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 362021162965D8C800F13F5B /* Assets.xcassets */; };
 		362021192965DC4B00F13F5B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362021182965DC4B00F13F5B /* DetailView.swift */; };
+		362021272968C69B00F13F5B /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362021262968C69B00F13F5B /* DetailEditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		362021142965CE0A00F13F5B /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		362021162965D8C800F13F5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		362021182965DC4B00F13F5B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		362021262968C69B00F13F5B /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				362020FD2964BD9F00F13F5B /* ScrumdingerApp.swift */,
 				362021142965CE0A00F13F5B /* ScrumsView.swift */,
 				362021122965CC4300F13F5B /* TrailingIconLabelStyle.swift */,
+				362021262968C69B00F13F5B /* DetailEditView.swift */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			files = (
 				3620210F2965C8FA00F13F5B /* DailyScrum.swift in Sources */,
 				362021192965DC4B00F13F5B /* DetailView.swift in Sources */,
+				362021272968C69B00F13F5B /* DetailEditView.swift in Sources */,
 				362021132965CC4300F13F5B /* TrailingIconLabelStyle.swift in Sources */,
 				3620210D2965C87E00F13F5B /* Theme.swift in Sources */,
 				362021152965CE0A00F13F5B /* ScrumsView.swift in Sources */,
