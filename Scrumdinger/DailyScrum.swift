@@ -24,15 +24,27 @@ struct DailyScrum: Identifiable {
 }
 
 extension DailyScrum {
-    struct Attendee: Identifiable {
-      let id: UUID
-      var name: String
+  struct Attendee: Identifiable {
+    let id: UUID
+    var name: String
 
-      init(id: UUID = UUID(), name: String) {
-        self.id = id
-        self.name = name
-      }
+    init(id: UUID = UUID(), name: String) {
+      self.id = id
+      self.name = name
     }
+  }
+
+  struct Data {
+    var title: String = ""
+    var attendees: [Attendee] = []
+    var lengthInMinutes: Double = 5
+    var theme: Theme = .seafoam
+  }
+
+  /// Computed data property that returns Data with the DailyScrum property values
+  var data: Data {
+    Data(title: title, attendees: attendees, lengthInMinutes: Double(lengthInMinutes), theme: theme)
+  }
 }
 
 /// Sample Data
