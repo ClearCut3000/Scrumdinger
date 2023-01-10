@@ -11,6 +11,7 @@ struct MeetingView: View {
 
   //MARK: - View Dependencies
   @Binding var scrum: DailyScrum
+  @StateObject var scrumTimer = ScrumTimer()
 
   //MARK: - View Body
     var body: some View {
@@ -18,7 +19,9 @@ struct MeetingView: View {
         RoundedRectangle(cornerRadius: 16)
           .fill(scrum.theme.mainColor)
         VStack {
-
+          MeetingHeaderView(secondsElapsed: scrumTimer.secondsElapsed,
+                            secondsRemaining: scrumTimer.secondsRemaining,
+                            theme: scrum.theme)
           Circle()
             .strokeBorder(lineWidth: 24)
           HStack {
@@ -31,6 +34,13 @@ struct MeetingView: View {
         }
         .padding()
         .foregroundColor(scrum.theme.accentColor)
+        .onAppear(perform: {
+          scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
+          scrumTimer.startScrum()
+        })
+        .onDisappear(perform: {
+          scrumTimer.stopScrum()
+        })
         .navigationBarTitleDisplayMode(.inline)
       }
     }
