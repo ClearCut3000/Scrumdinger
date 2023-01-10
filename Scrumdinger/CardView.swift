@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CardView: View {
 
-  //MARK: - View Properties
+  //MARK: - View Dependencies
   let scrum: DailyScrum
 
   //MARK: - View Body

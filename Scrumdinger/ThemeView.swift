@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ThemeView: View {
 
-  //MARK: - View Properties
+  //MARK: - View Dependencies
   let theme: Theme
 
   //MARK: - View Body

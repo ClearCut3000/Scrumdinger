@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DetailEditView: View {
 
-  //MARK: - View Properties
+  //MARK: - View Dependencies
   @Binding var data: DailyScrum.Data
   @State private var newAttendeeName = ""
 

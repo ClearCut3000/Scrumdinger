@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ScrumsView: View {
 
-  //MARK: - View Properties
+  //MARK: - View Dependencies
   @Binding var scrums: [DailyScrum]
 
-  //AMRK: - View Body
+  //MARK: - View Body
   var body: some View {
     List {
       ForEach($scrums) { $scrum in

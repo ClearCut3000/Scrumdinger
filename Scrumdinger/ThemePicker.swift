@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ThemePicker: View {
 
-  //MARK: - View Properties
+  //MARK: - View Dependencies
   @Binding var selection: Theme
 
   //MARK: - View Body
