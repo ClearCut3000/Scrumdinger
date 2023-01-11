@@ -13,6 +13,7 @@
 		36155C61296DB9F6000178CF /* MeetingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36155C60296DB9F6000178CF /* MeetingHeaderView.swift */; };
 		36155C63296DBD0F000178CF /* ScrumProgressViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36155C62296DBD0F000178CF /* ScrumProgressViewStyle.swift */; };
 		36155C65296DE9EC000178CF /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36155C64296DE9EC000178CF /* MeetingFooterView.swift */; };
+		36155C67296DEE00000178CF /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36155C66296DEE00000178CF /* AVPlayer+Ding.swift */; };
 		362020FE2964BD9F00F13F5B /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362020FD2964BD9F00F13F5B /* ScrumdingerApp.swift */; };
 		362021002964BD9F00F13F5B /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362020FF2964BD9F00F13F5B /* MeetingView.swift */; };
 		362021052964BDA100F13F5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 362021042964BDA100F13F5B /* Preview Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		362021172965D8C900F13F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 362021162965D8C800F13F5B /* Assets.xcassets */; };
 		362021192965DC4B00F13F5B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362021182965DC4B00F13F5B /* DetailView.swift */; };
 		362021272968C69B00F13F5B /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 362021262968C69B00F13F5B /* DetailEditView.swift */; };
+		3622D539296EE45E004D6DDB /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3622D538296EE45E004D6DDB /* ding.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,7 @@
 		36155C60296DB9F6000178CF /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = "<group>"; };
 		36155C62296DBD0F000178CF /* ScrumProgressViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumProgressViewStyle.swift; sourceTree = "<group>"; };
 		36155C64296DE9EC000178CF /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
+		36155C66296DEE00000178CF /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		362020FA2964BD9F00F13F5B /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		362020FD2964BD9F00F13F5B /* ScrumdingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerApp.swift; sourceTree = "<group>"; };
 		362020FF2964BD9F00F13F5B /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		362021162965D8C800F13F5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		362021182965DC4B00F13F5B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		362021262968C69B00F13F5B /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
+		3622D538296EE45E004D6DDB /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 				36155C60296DB9F6000178CF /* MeetingHeaderView.swift */,
 				36155C62296DBD0F000178CF /* ScrumProgressViewStyle.swift */,
 				36155C64296DE9EC000178CF /* MeetingFooterView.swift */,
+				3622D53A296EE46D004D6DDB /* Resources */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -110,8 +115,17 @@
 				3620210C2965C87E00F13F5B /* Theme.swift */,
 				3620210E2965C8FA00F13F5B /* DailyScrum.swift */,
 				36155C5E296CAA2F000178CF /* ScrumTimer.swift */,
+				36155C66296DEE00000178CF /* AVPlayer+Ding.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		3622D53A296EE46D004D6DDB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3622D538296EE45E004D6DDB /* ding.wav */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3622D539296EE45E004D6DDB /* ding.wav in Resources */,
 				362021172965D8C900F13F5B /* Assets.xcassets in Resources */,
 				362021052964BDA100F13F5B /* Preview Assets.xcassets in Resources */,
 			);
@@ -199,6 +214,7 @@
 				362020FE2964BD9F00F13F5B /* ScrumdingerApp.swift in Sources */,
 				36155C5B296B3E17000178CF /* ThemeView.swift in Sources */,
 				362021112965C94300F13F5B /* CardView.swift in Sources */,
+				36155C67296DEE00000178CF /* AVPlayer+Ding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +340,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Preview Content\"";
@@ -342,6 +359,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Scrumdinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -353,6 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Preview Content\"";
@@ -371,6 +390,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Scrumdinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
