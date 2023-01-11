@@ -11,6 +11,8 @@ struct ScrumsView: View {
 
   //MARK: - View Dependencies
   @Binding var scrums: [DailyScrum]
+  @State private var isPresentingNewScrumView = false
+  @State private var newScrumData = DailyScrum.Data()
 
   //MARK: - View Body
   var body: some View {
@@ -25,10 +27,33 @@ struct ScrumsView: View {
     }
     .navigationTitle("Daily Scrums")
     .toolbar {
-      Button(action: {}) {
+      Button(action: {
+        isPresentingNewScrumView = true
+      }) {
         Image(systemName: "plus")
       }
       .accessibilityLabel("New Scrum")
+    }
+    .sheet(isPresented: $isPresentingNewScrumView) {
+      NavigationView {
+        DetailEditView(data: $newScrumData)
+          .toolbar {
+            ToolbarItem(placement: .cancellationAction) {
+              Button("Dismiss") {
+                isPresentingNewScrumView = false
+                newScrumData = DailyScrum.Data()
+              }
+            }
+            ToolbarItem(placement: .confirmationAction) {
+              Button("Add") {
+                let newScrum = DailyScrum(data: newScrumData)
+                scrums.append(newScrum)
+                isPresentingNewScrumView = false
+                newScrumData = DailyScrum.Data()
+              }
+            }
+          }
+      }
     }
   }
 }
