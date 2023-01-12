@@ -18,5 +18,29 @@ class ScrumStore: ObservableObject {
                                 create: false)
     .appendingPathComponent("scrums.data")
   }
+
+  static func load(completion: @escaping (Result<[DailyScrum], Error>)->Void) {
+    DispatchQueue.global(qos: .background).async {
+      do {
+        let fileURL = try fileURL()
+        guard let file = try? FileHandle(forReadingFrom: fileURL) else {
+          /// Because scrums.data doesn’t exist when a user launches the app for the first time,
+          /// call the completion handler with an empty array if there’s an error opening the file handle.
+          DispatchQueue.main.async {
+            completion(.success([]))
+          }
+          return
+        }
+        let dailyScrums = try JSONDecoder().decode([DailyScrum].self, from: file.availableData)
+        DispatchQueue.main.async {
+          completion(.success(dailyScrums))
+        }
+      } catch {
+        DispatchQueue.main.async {
+          completion(.failure(error))
+        }
+      }
+    }
+  }
 }
 
