@@ -19,6 +19,7 @@ class ScrumStore: ObservableObject {
     .appendingPathComponent("scrums.data")
   }
 
+  /// async load method
   static func load() async throws -> [DailyScrum] {
     try await withCheckedThrowingContinuation({ continuation in
       load { result in
@@ -54,6 +55,21 @@ class ScrumStore: ObservableObject {
         }
       }
     }
+  }
+
+  /// async save meethod
+  @discardableResult
+  static func save(scrums: [DailyScrum]) async throws -> Int {
+    try await withCheckedThrowingContinuation({ continuation in
+      save(scrums: scrums) { result in
+        switch result {
+        case .success(let success):
+          continuation.resume(returning: success)
+        case .failure(let failure):
+          continuation.resume(throwing: failure)
+        }
+      }
+    })
   }
 
   static func save(scrums: [DailyScrum], completion: @escaping (Result<Int, Error>)->Void) {
