@@ -18,9 +18,11 @@ struct ScrumdingerApp: App {
     WindowGroup {
       NavigationView {
         ScrumsView(scrums: $store.scrums) {
-          ScrumStore.save(scrums: store.scrums) { result in
-            if case .failure(let failure) = result {
-              fatalError(failure.localizedDescription)
+          Task {
+            do {
+              try await ScrumStore.save(scrums: store.scrums)
+            } catch {
+              fatalError("Error saving scrums.")
             }
           }
         }
@@ -33,6 +35,13 @@ struct ScrumdingerApp: App {
           case .failure(let failure):
             fatalError(failure.localizedDescription)
           }
+        }
+      }
+      .task {
+        do {
+          store.scrums = try await ScrumStore.load()
+        } catch {
+          fatalError("Error loading scrums.")
         }
       }
     }
