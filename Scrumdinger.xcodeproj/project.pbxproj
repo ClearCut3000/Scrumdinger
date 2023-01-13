@@ -28,6 +28,7 @@
 		3622D539296EE45E004D6DDB /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3622D538296EE45E004D6DDB /* ding.wav */; };
 		3622D53C29703FC1004D6DDB /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622D53B29703FC1004D6DDB /* History.swift */; };
 		3622D53E297042DE004D6DDB /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622D53D297042DE004D6DDB /* ScrumStore.swift */; };
+		3622D5402971EDF7004D6DDB /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622D53F2971EDF7004D6DDB /* ErrorWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		3622D538296EE45E004D6DDB /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		3622D53B29703FC1004D6DDB /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		3622D53D297042DE004D6DDB /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
+		3622D53F2971EDF7004D6DDB /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				36155C66296DEE00000178CF /* AVPlayer+Ding.swift */,
 				3622D53B29703FC1004D6DDB /* History.swift */,
 				3622D53D297042DE004D6DDB /* ScrumStore.swift */,
+				3622D53F2971EDF7004D6DDB /* ErrorWrapper.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				362021272968C69B00F13F5B /* DetailEditView.swift in Sources */,
 				362021132965CC4300F13F5B /* TrailingIconLabelStyle.swift in Sources */,
 				3620210D2965C87E00F13F5B /* Theme.swift in Sources */,
+				3622D5402971EDF7004D6DDB /* ErrorWrapper.swift in Sources */,
 				36155C61296DB9F6000178CF /* MeetingHeaderView.swift in Sources */,
 				36155C5F296CAA2F000178CF /* ScrumTimer.swift in Sources */,
 				362021152965CE0A00F13F5B /* ScrumsView.swift in Sources */,
