@@ -29,6 +29,7 @@
 		3622D53C29703FC1004D6DDB /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622D53B29703FC1004D6DDB /* History.swift */; };
 		3622D53E297042DE004D6DDB /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622D53D297042DE004D6DDB /* ScrumStore.swift */; };
 		3622D5402971EDF7004D6DDB /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622D53F2971EDF7004D6DDB /* ErrorWrapper.swift */; };
+		3622D5422971EE96004D6DDB /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622D5412971EE96004D6DDB /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		3622D53B29703FC1004D6DDB /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		3622D53D297042DE004D6DDB /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
 		3622D53F2971EDF7004D6DDB /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
+		3622D5412971EE96004D6DDB /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				36155C62296DBD0F000178CF /* ScrumProgressViewStyle.swift */,
 				36155C64296DE9EC000178CF /* MeetingFooterView.swift */,
 				3622D53A296EE46D004D6DDB /* Resources */,
+				3622D5412971EE96004D6DDB /* ErrorView.swift */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				36155C5F296CAA2F000178CF /* ScrumTimer.swift in Sources */,
 				362021152965CE0A00F13F5B /* ScrumsView.swift in Sources */,
 				362021002964BD9F00F13F5B /* MeetingView.swift in Sources */,
+				3622D5422971EE96004D6DDB /* ErrorView.swift in Sources */,
 				362020FE2964BD9F00F13F5B /* ScrumdingerApp.swift in Sources */,
 				36155C5B296B3E17000178CF /* ThemeView.swift in Sources */,
 				362021112965C94300F13F5B /* CardView.swift in Sources */,
@@ -364,7 +368,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,7 +400,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
