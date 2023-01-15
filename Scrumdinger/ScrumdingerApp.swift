@@ -28,16 +28,6 @@ struct ScrumdingerApp: App {
           }
         }
       }
-      .onAppear {
-        ScrumStore.load { result in
-          switch result {
-          case .success(let success):
-            store.scrums = success
-          case .failure(let failure):
-            fatalError(failure.localizedDescription)
-          }
-        }
-      }
       .task {
         do {
           store.scrums = try await ScrumStore.load()
@@ -50,7 +40,6 @@ struct ScrumdingerApp: App {
       } content: { wrapper in
         ErrorView(errorWrapper: wrapper)
       }
-      
     }
   }
 }

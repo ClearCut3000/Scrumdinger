@@ -21,7 +21,7 @@ class ScrumStore: ObservableObject {
 
   /// async load method
   static func load() async throws -> [DailyScrum] {
-    try await withCheckedThrowingContinuation({ continuation in
+    try await withCheckedThrowingContinuation { continuation in
       load { result in
         switch result {
         case .success(let success):
@@ -30,7 +30,7 @@ class ScrumStore: ObservableObject {
           continuation.resume(throwing: failure)
         }
       }
-    })
+    }
   }
 
   static func load(completion: @escaping (Result<[DailyScrum], Error>)->Void) {
