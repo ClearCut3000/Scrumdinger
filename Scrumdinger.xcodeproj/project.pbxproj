@@ -31,6 +31,7 @@
 		3622D5402971EDF7004D6DDB /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622D53F2971EDF7004D6DDB /* ErrorWrapper.swift */; };
 		3622D5422971EE96004D6DDB /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622D5412971EE96004D6DDB /* ErrorView.swift */; };
 		3622D5442974A190004D6DDB /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622D5432974A190004D6DDB /* MeetingTimerView.swift */; };
+		3622D5462975E00A004D6DDB /* SpeakerArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622D5452975E00A004D6DDB /* SpeakerArc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		3622D53F2971EDF7004D6DDB /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
 		3622D5412971EE96004D6DDB /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		3622D5432974A190004D6DDB /* MeetingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingTimerView.swift; sourceTree = "<group>"; };
+		3622D5452975E00A004D6DDB /* SpeakerArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerArc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				3622D53A296EE46D004D6DDB /* Resources */,
 				3622D5412971EE96004D6DDB /* ErrorView.swift */,
 				3622D5432974A190004D6DDB /* MeetingTimerView.swift */,
+				3622D5452975E00A004D6DDB /* SpeakerArc.swift */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				362020FE2964BD9F00F13F5B /* ScrumdingerApp.swift in Sources */,
 				36155C5B296B3E17000178CF /* ThemeView.swift in Sources */,
 				362021112965C94300F13F5B /* CardView.swift in Sources */,
+				3622D5462975E00A004D6DDB /* SpeakerArc.swift in Sources */,
 				36155C67296DEE00000178CF /* AVPlayer+Ding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
