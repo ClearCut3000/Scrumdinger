@@ -98,27 +98,16 @@
 		362020FC2964BD9F00F13F5B /* Scrumdinger */ = {
 			isa = PBXGroup;
 			children = (
-				3622D5472975E2EB004D6DDB /* Info.plist */,
 				362021162965D8C800F13F5B /* Assets.xcassets */,
-				362021102965C94300F13F5B /* CardView.swift */,
-				362021182965DC4B00F13F5B /* DetailView.swift */,
-				362020FF2964BD9F00F13F5B /* MeetingView.swift */,
+				3622D54E2976CD91004D6DDB /* Detail View */,
+				3622D5412971EE96004D6DDB /* ErrorView.swift */,
+				3622D5472975E2EB004D6DDB /* Info.plist */,
+				3622D54F2976CD9B004D6DDB /* Meeting View */,
 				3620210B2965C86600F13F5B /* Models */,
 				362021032964BDA100F13F5B /* Preview Content */,
-				362020FD2964BD9F00F13F5B /* ScrumdingerApp.swift */,
-				362021142965CE0A00F13F5B /* ScrumsView.swift */,
-				362021122965CC4300F13F5B /* TrailingIconLabelStyle.swift */,
-				362021262968C69B00F13F5B /* DetailEditView.swift */,
-				36155C5A296B3E17000178CF /* ThemeView.swift */,
-				36155C5C296B5B61000178CF /* ThemePicker.swift */,
-				36155C60296DB9F6000178CF /* MeetingHeaderView.swift */,
-				36155C62296DBD0F000178CF /* ScrumProgressViewStyle.swift */,
-				36155C64296DE9EC000178CF /* MeetingFooterView.swift */,
 				3622D53A296EE46D004D6DDB /* Resources */,
-				3622D5412971EE96004D6DDB /* ErrorView.swift */,
-				3622D5432974A190004D6DDB /* MeetingTimerView.swift */,
-				3622D5452975E00A004D6DDB /* SpeakerArc.swift */,
-				3622D54A2976ADCC004D6DDB /* HistoryView.swift */,
+				362020FD2964BD9F00F13F5B /* ScrumdingerApp.swift */,
+				3622D54C2976CCB0004D6DDB /* Start Scrums View */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -152,6 +141,89 @@
 				3622D538296EE45E004D6DDB /* ding.wav */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		3622D54C2976CCB0004D6DDB /* Start Scrums View */ = {
+			isa = PBXGroup;
+			children = (
+				362021142965CE0A00F13F5B /* ScrumsView.swift */,
+				3622D54D2976CCF3004D6DDB /* Subview's */,
+			);
+			path = "Start Scrums View";
+			sourceTree = "<group>";
+		};
+		3622D54D2976CCF3004D6DDB /* Subview's */ = {
+			isa = PBXGroup;
+			children = (
+				3622D5542976CF38004D6DDB /* CardView */,
+				3622D5522976CE39004D6DDB /* DetailEditView */,
+			);
+			path = "Subview's";
+			sourceTree = "<group>";
+		};
+		3622D54E2976CD91004D6DDB /* Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				362021182965DC4B00F13F5B /* DetailView.swift */,
+				3622D54A2976ADCC004D6DDB /* HistoryView.swift */,
+			);
+			path = "Detail View";
+			sourceTree = "<group>";
+		};
+		3622D54F2976CD9B004D6DDB /* Meeting View */ = {
+			isa = PBXGroup;
+			children = (
+				362020FF2964BD9F00F13F5B /* MeetingView.swift */,
+				3622D5502976CDB2004D6DDB /* Subview's */,
+			);
+			path = "Meeting View";
+			sourceTree = "<group>";
+		};
+		3622D5502976CDB2004D6DDB /* Subview's */ = {
+			isa = PBXGroup;
+			children = (
+				3622D5532976CEA7004D6DDB /* MeetingHeaderView */,
+				36155C64296DE9EC000178CF /* MeetingFooterView.swift */,
+				3622D5512976CDDA004D6DDB /* MeetingTimerView */,
+			);
+			path = "Subview's";
+			sourceTree = "<group>";
+		};
+		3622D5512976CDDA004D6DDB /* MeetingTimerView */ = {
+			isa = PBXGroup;
+			children = (
+				3622D5432974A190004D6DDB /* MeetingTimerView.swift */,
+				3622D5452975E00A004D6DDB /* SpeakerArc.swift */,
+			);
+			path = MeetingTimerView;
+			sourceTree = "<group>";
+		};
+		3622D5522976CE39004D6DDB /* DetailEditView */ = {
+			isa = PBXGroup;
+			children = (
+				362021262968C69B00F13F5B /* DetailEditView.swift */,
+				36155C5A296B3E17000178CF /* ThemeView.swift */,
+				36155C5C296B5B61000178CF /* ThemePicker.swift */,
+			);
+			path = DetailEditView;
+			sourceTree = "<group>";
+		};
+		3622D5532976CEA7004D6DDB /* MeetingHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				36155C60296DB9F6000178CF /* MeetingHeaderView.swift */,
+				36155C62296DBD0F000178CF /* ScrumProgressViewStyle.swift */,
+			);
+			path = MeetingHeaderView;
+			sourceTree = "<group>";
+		};
+		3622D5542976CF38004D6DDB /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				362021102965C94300F13F5B /* CardView.swift */,
+				362021122965CC4300F13F5B /* TrailingIconLabelStyle.swift */,
+			);
+			path = CardView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
