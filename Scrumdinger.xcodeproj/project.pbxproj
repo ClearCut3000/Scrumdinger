@@ -33,6 +33,7 @@
 		3622D5442974A190004D6DDB /* MeetingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622D5432974A190004D6DDB /* MeetingTimerView.swift */; };
 		3622D5462975E00A004D6DDB /* SpeakerArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622D5452975E00A004D6DDB /* SpeakerArc.swift */; };
 		3622D54929769DD8004D6DDB /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622D54829769DD8004D6DDB /* SpeechRecognizer.swift */; };
+		3622D54B2976ADCC004D6DDB /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3622D54A2976ADCC004D6DDB /* HistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		3622D5452975E00A004D6DDB /* SpeakerArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerArc.swift; sourceTree = "<group>"; };
 		3622D5472975E2EB004D6DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3622D54829769DD8004D6DDB /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		3622D54A2976ADCC004D6DDB /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				3622D5412971EE96004D6DDB /* ErrorView.swift */,
 				3622D5432974A190004D6DDB /* MeetingTimerView.swift */,
 				3622D5452975E00A004D6DDB /* SpeakerArc.swift */,
+				3622D54A2976ADCC004D6DDB /* HistoryView.swift */,
 			);
 			path = Scrumdinger;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3622D53C29703FC1004D6DDB /* History.swift in Sources */,
+				3622D54B2976ADCC004D6DDB /* HistoryView.swift in Sources */,
 				36155C5D296B5B61000178CF /* ThemePicker.swift in Sources */,
 				3620210F2965C8FA00F13F5B /* DailyScrum.swift in Sources */,
 				36155C65296DE9EC000178CF /* MeetingFooterView.swift in Sources */,
